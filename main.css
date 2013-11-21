@@ -1,8 +1,10 @@
 body{
 	background-image: url('bg.png');
+	font-family: verdana;
 }
 body a{
 	text-decoration: none;
+	color: black;
 }
 #container{
 	width: 960px;
@@ -10,6 +12,19 @@ body a{
 }
 //Home
 //header
+header #Login, header #Sign_Up{
+	display: inline-block;
+}
+#Login input, #Sign_Up input{
+	font-weight: bold;
+	color: white;
+}
+#Login input{
+	background: blue;
+}
+#Sign_Up input{
+	background: green;
+}
 #navbar{
 	list-style-type:none;
 }
@@ -37,6 +52,12 @@ body a{
 	
 }
 //aside
+#title{
+}
+#title a{
+	font-size: 40px;
+	color: black;	
+}	
 #shortcut{
 	display: inline-block;
 }
@@ -48,6 +69,7 @@ body a{
 	margin-right: 7px;
 	background: white;
 	float:left;
+	border-radius: 7px;
 }
 #shortcut a{	
 	display: inline-block;
