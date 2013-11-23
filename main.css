@@ -35,27 +35,29 @@ form:after{
 	width: 100px;
 }
 #navbar{
-	list-style-type:none;
+        list-style-type:none;
 }
-#navbar li{	
-	display: inline-block;
-	float: right;	
-	border: 1px solid #005;
-	background: orange;
-	padding: 5px;
+#navbar li{        
+        display: inline-block;
+        float: right;        
+        border: 1px solid #005;
+        background: orange;
+        padding: 7px;
 }
 #navbar li a{
-	padding: 1px 1px 0 0;
-	color: #00FFFF;		
+        padding: 7px;
+        color: #00FFFF;                
 }
 #navbar li:after{
-	clear: both;
-}	
-#navbar li a:hover{	
-	font-weight: bold;
-	color: black;
-	padding: 3px;
+        clear: both;
+}        
+#navbar li:hover{        
+        
+        color: black;
+		background:#00FFFF;
+        padding: 7px;
 }
+#navbar li a:hover{color:#000000;}
 //section
 #foto{
 	
