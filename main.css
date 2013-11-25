@@ -81,21 +81,39 @@ form:after{
 	float:left;
 	border-radius: 7px;
 }
-#shortcut a{	
-	display: inline-block;
-	margin: 23px;
+#shortcut a{        
+        display: inline-block;
+        margin: 23px;
+		color:green;
+		font-weight:bold;
 }
 #shortcut a:hover{
-	font-weight: bold;
+        color: orange;;
+		font-weight:bold;
 }
-#Top_Rank:hover, #Quick_Sort:hover, #Sequential_Sort:hover{
-	background: cyan;
+
+
+#Top_Rank:hover,#Top_Rank {
+        background:url(images/bintang1.jpg)
 }
-#Basic_Computer:hover, #Insertion_Sort:hover, #Bubble_Sort:hover{
-	background: blue;
+#Basic_Computer:hover,#Basic_Computer{
+        background:url(images/lampu.jpg)
+		}
+#Quick_Sort:hover,#Quick_Sort{
+		background:url(images/images12.jpg);
+		}
+#Insertion_Sort:hover,#Insertion_Sort{
+		background:url(images/images.jpg)
 }
+#Bubble_Sort:hover,#Bubble_Sort{
+		background:url(images/bubbles.jpg)
+		}
+#Sequential_Sort:hover,#Sequential_Sort{
+		background:url(images/index1.jpg);
+		}
+		
 #Top_Rank:after{
-	clear: both;
+        clear: both;
 }
 
 //footer
