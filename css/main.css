@@ -99,7 +99,7 @@ form:after{
 #shortcut a{        
         display: inline-block;
         margin: 23px;
-		color:green;
+		color:#0000FF;
 		font-weight:bold;
 }
 #shortcut a:hover{
@@ -138,11 +138,11 @@ form:after{
 	margin-top:650px;
 	}
 #foot a{
-	color:green;
+	color:orange;
 	font-weight:bold;
 }
 
 #foot a:hover{
-	color:orange;
+	color:#33FFFF;
 	font-weight:bold;
 }
