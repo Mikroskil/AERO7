@@ -30,9 +30,17 @@ form:after{
 	background: blue;
 	width: 100px;	
 }
+#Login input:hover{
+        background:#0066FF;
+        width: 100px; 
+		}
 #Sign_Up input{
 	background: green;
 	width: 100px;
+}
+#Sign_Up input:hover{
+        background:#00CC00;
+        width: 100px;
 }
 
 #foto img{
