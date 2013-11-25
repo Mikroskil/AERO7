@@ -124,9 +124,17 @@ form:after{
 }
 
 //footer
-footer{
-	margin: 30px;
+.footer{
+	font-size:12px;
+	color:green;
+	margin-top:650px;
+	}
+#foot a{
+	color:green;
+	font-weight:bold;
 }
-footer a{
-	color: blue;
+
+#foot a:hover{
+	color:orange;
+	font-weight:bold;
 }
