@@ -1,0 +1,89 @@
+body{
+	background-image: url('../images/bg.png');
+	font-family: verdana;
+	width: 960px;
+	margin: 0 auto;
+}
+body a{
+	text-decoration: none;
+	color: black;
+}
+//Home
+//header
+#Login, #Sign_Up{
+	display:inline;
+	width: 100px;
+}
+#Login input, #Sign_Up input{
+	font-weight: bold;
+	color: white;
+	width:100px;
+}
+form{
+	width:100px;
+	float: right;
+}
+form:after{
+	clear: both;
+}
+#Login input{
+	background: blue;
+	width: 100px;	
+}
+#Login input:hover{
+        background:#0066FF;
+        width: 100px; 
+		}
+#Sign_Up input{
+	background: green;
+	width: 100px;
+}
+#Sign_Up input:hover{
+        background:#00CC00;
+        width: 100px;
+}
+
+#foto img{
+		width:900px;
+		height:400px;
+}
+
+#navbar{
+        list-style-type:none;
+}
+#navbar li{        
+        display: inline-block;
+        float: right;        
+        border: 1px solid #005;
+        background: orange;
+        padding: 7px;
+}
+#navbar li a{
+        padding: 7px;
+        color: #00FFFF;                
+}
+#navbar li:after{
+        clear: both;
+}        
+#navbar li:hover{        
+        
+        color: black;
+		background:#00FFFF;
+        padding: 7px;
+}
+#navbar li a:hover{color:#000000;}
+//section
+#Bubble_Sort:hover{
+		color:#00FF66;
+}
+#Bubble_Sort, #Insertion_Sort, #Quick_Sort, #Sequential_Sort{
+		display: inline-block;
+		border: 3px solid #000099;
+		padding: 7px;
+		width: 590px;
+}
+.readmore{
+	text-align: right;
+	text-decoration: underline;
+	color: #0000FF;
+}
