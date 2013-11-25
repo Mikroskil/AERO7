@@ -1,5 +1,5 @@
 body{
-	background-image: url('bg.png');
+	background-image: url('../images/bg.png');
 	font-family: verdana;
 	width: 960px;
 	margin: 0 auto;
@@ -109,22 +109,22 @@ form:after{
 
 
 #Top_Rank:hover,#Top_Rank {
-        background:url(images/bintang1.jpg)
+        background:url(../images/bintang1.jpg)
 }
 #Basic_Computer:hover,#Basic_Computer{
-        background:url(images/lampu.jpg)
+        background:url(../images/lampu.jpg)
 		}
 #Quick_Sort:hover,#Quick_Sort{
-		background:url(images/images12.jpg);
+		background:url(../images/images12.jpg);
 		}
 #Insertion_Sort:hover,#Insertion_Sort{
-		background:url(images/images.jpg)
+		background:url(../images/images.jpg)
 }
 #Bubble_Sort:hover,#Bubble_Sort{
-		background:url(images/bubbles.jpg)
+		background:url(../images/bubbles.jpg)
 		}
 #Sequential_Sort:hover,#Sequential_Sort{
-		background:url(images/index1.jpg);
+		background:url(../images/index1.jpg);
 		}
 		
 #Top_Rank:after{
