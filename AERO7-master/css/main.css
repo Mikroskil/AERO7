@@ -1,0 +1,148 @@
+body{
+	background-image: url('../images/bg.png');
+	font-family: verdana;
+	width: 960px;
+	margin: 0 auto;
+}
+body a{
+	text-decoration: none;
+	color: black;
+}
+//Home
+//header
+#Login, #Sign_Up{
+	display:inline;
+	width: 100px;
+}
+#Login input, #Sign_Up input{
+	font-weight: bold;
+	color: white;
+	width:100px;
+}
+form{
+	width:100px;
+	float: right;
+}
+form:after{
+	clear: both;
+}
+#Login input{
+	background: blue;
+	width: 100px;	
+}
+#Login input:hover{
+        background:#00CCFF;
+        width: 100px; 
+		}
+#Sign_Up input{
+	background: green;
+	width: 100px;
+}
+#Sign_Up input:hover{
+        background:#00CC00;
+        width: 100px;
+}
+
+#foto img{
+		width:900px;
+		height:400px;
+}
+
+#navbar{
+        list-style-type:none;
+}
+#navbar li{        
+        display: inline-block;
+        float: right;        
+        border: 1px solid #005;
+        background: orange;
+        padding: 7px;
+}
+#navbar li a{
+        padding: 7px;
+        color: #00FFFF;                
+}
+#navbar li:after{
+        clear: both;
+}        
+#navbar li:hover{        
+        
+        color: black;
+		background:#00FFFF;
+        padding: 7px;
+}
+#navbar li a:hover{color:#000000;}
+//section
+#foto{
+	
+}
+//aside
+#title{
+		font-weight:bold;
+	}
+#title a{
+	font-size: 40px;
+}	
+#shortcut{
+	display: inline-block;
+}
+
+#Top_Rank, #Basic_Computer, #Quick_Sort, #Insertion_Sort, #Sequential_Sort, #Bubble_Sort{
+	border: 1px solid #005;
+	width: 151px;
+	height: 100px;
+	margin-right: 7px;
+	background: white;
+	float:left;
+	border-radius: 7px;
+}
+#shortcut a{        
+        display: inline-block;
+        margin: 23px;
+		color:#0000FF;
+		font-weight:bold;
+}
+#shortcut a:hover{
+        color: orange;;
+		font-weight:bold;
+}
+
+
+#Top_Rank:hover,#Top_Rank {
+        background:url(../images/bintang1.jpg)
+}
+#Basic_Computer:hover,#Basic_Computer{
+        background:url(../images/lampu.jpg)
+		}
+#Quick_Sort:hover,#Quick_Sort{
+		background:url(../images/images12.jpg);
+		}
+#Insertion_Sort:hover,#Insertion_Sort{
+		background:url(../images/images.jpg)
+}
+#Bubble_Sort:hover,#Bubble_Sort{
+		background:url(../images/bubbles.jpg)
+		}
+#Sequential_Sort:hover,#Sequential_Sort{
+		background:url(../images/index1.jpg);
+		}
+		
+#Top_Rank:after{
+        clear: both;
+}
+
+//footer
+.footer{
+	font-size:12px;
+	color:green;
+	margin-top:650px;
+	}
+#foot a{
+	color:orange;
+	font-weight:bold;
+}
+
+#foot a:hover{
+	color:#33FFFF;
+	font-weight:bold;
+}
