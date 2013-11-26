@@ -10,6 +10,19 @@ body a{
 }
 //Home
 //header
+.logo{
+	
+	display:inline-block;
+	}
+h2{ margin-top:40px;
+	background-image:url(../images/awan.jpg);
+	color:#00FFFF;
+	padding:10px;
+	font-size:36px;
+	width:940PX;
+	height:60px;
+	display:inline-block;
+	}
 #Login, #Sign_Up{
 	display:inline;
 	width: 100px;
@@ -44,7 +57,7 @@ form:after{
 }
 
 #foto img{
-		width:900px;
+		width:960px;
 		height:400px;
 }
 
@@ -73,9 +86,7 @@ form:after{
 }
 #navbar li a:hover{color:#000000;}
 //section
-#foto{
-	
-}
+
 //aside
 #title{
 		font-weight:bold;
