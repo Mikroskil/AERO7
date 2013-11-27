@@ -76,7 +76,7 @@ form:after{
 #Bubble_Sort:hover{
 		color:#00FF66;
 }
-#Bubble_Sort, #Insertion_Sort, #Quick_Sort, #Sequential_Sort{
+#Bubble_Sort, #Insertion_Sort, #Quick_Sort, #Merge_Sort{
 		display: inline-block;
 		border: 3px solid #000099;
 		padding: 7px;

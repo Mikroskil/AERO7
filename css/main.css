@@ -11,8 +11,7 @@ body a{
 //Home
 //header
 .logo{
-	
-	display:inline-block;
+	display:inline-block;	
 	}
 h2{ margin-top:40px;
 	background-image:url(../images/awan.jpg);
@@ -156,4 +155,8 @@ form:after{
 #foot a:hover{
 	color:#33FFFF;
 	font-weight:bold;
+}
+#copyright{
+	text-align: center;
+	border-top: 1px solid #CCCC33;
 }
