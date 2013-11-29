@@ -97,7 +97,7 @@ form:after{
 	display: inline-block;
 }
 
-#Top_Rank, #Basic_Computer, #Quick_Sort, #Insertion_Sort, #Sequential_Sort, #Bubble_Sort{
+#Top_Rank, #Basic_Computer, #Quick_Sort, #Insertion_Sort, #Merge_Sort, #Bubble_Sort{
 	border: 1px solid #005;
 	width: 151px;
 	height: 100px;
@@ -133,7 +133,7 @@ form:after{
 #Bubble_Sort:hover,#Bubble_Sort{
 		background:url(../images/bubbles.jpg)
 		}
-#Sequential_Sort:hover,#Sequential_Sort{
+#Merge_Sort:hover,#Merge_Sort{
 		background:url(../images/index1.jpg);
 		}
 		
@@ -156,7 +156,14 @@ form:after{
 	color:#33FFFF;
 	font-weight:bold;
 }
+<<<<<<< HEAD
 #copyright{
 	text-align: center;
 	border-top: 1px solid #CCCC33;
 }
+=======
+
+#tengah {text-align: center;
+		color:#33FFFF;}
+.hr3{width:100%; align:center;}
+>>>>>>> 840bbfe6bb3154cdcb8b0d6c49ccd5c5b34282a2
