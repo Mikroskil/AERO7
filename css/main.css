@@ -157,10 +157,17 @@ form:after{
 	font-weight:bold;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 #copyright{
 	text-align: center;
 	border-top: 1px solid #CCCC33;
 }
+=======
+
+#tengah {text-align: center;
+		color:#33FFFF;}
+.hr3{width:100%; align:center;}
+>>>>>>> 840bbfe6bb3154cdcb8b0d6c49ccd5c5b34282a2
 =======
 
 #tengah {text-align: center;
