@@ -158,6 +158,7 @@ form:after{
 	font-weight:bold;
 }
 
-#tengah {text-align: center;
-		color:#33FFFF;}
+#tengah p{text-align: center;
+		color:#33FFFF;
+		margin-left:200px;}
 .hr3{width:100%; align:center;}
