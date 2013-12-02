@@ -1,70 +1,110 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title> Algoritma dan Komputer </title>
-		<link rel="stylesheet" href="css/learn.css">
-		<script src='http://misbahudin.googlecode.com/files/daun%20gugur.js'/></script>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-		<script src='http://misbahudin-dcaesga.googlecode.com/files/efek-salju.js'/></script>
+    <title>Algoritma dan komputer</title>
 
-	</head>
-	<body>
-	<header>
-		<div id="Login">
-			<form action="Login.html" method="post">
-			<input type="submit" name="Login" value="Login">
-			</form>
-		</div>
-		<div id="Sign_Up">
-			<form action="Sign_Up.html" method="post">
-			<input type="submit" name="Sign Up" value="Sign Up">
-			</form>
-		</div>
-		<br><br>
-		<ul id="navbar">
-			<li><a href="Rank.html">Rank</a></li>
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-default-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="images/tutwuri.jpg" alt=""> SMA Negeri 1 Ujung Padang</a></img>
+        </div>
+		<div class="nav navbar-nav navbar-right">
+          <ul class="nav nav-pills">
+            <li><a href="sign_up.html"><button type="submit" class="btn btn-success">Sign Up</button></a></li>
+            <li><a href="login.html"><button type="submit" class="btn btn-primary">Login</button></a></li>
+		  </ul> 
+        </div>
+      </div>
+	  
+	  <div class="navbar navbar-default navbar-default-top" role="navigation">
+      <div class="container">
+		<div class="nav navbar-nav navbar-right">
+          <ul class="nav nav-pills">
+            <li><a href="Main.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li class="active"><a href="Learn.html">Learn</a></li>
+            <li><a href="Test.html">Test</a></li>
 			<li><a href="Contact.html">Contact Us</a></li>
-			<li><a href="Test.html">Test</a></li>
-			<li><a href="Learn.html">Learn</a></li>
-			<li><a href="About.html">About</a></li>
-			<li><a href="Main.html">Home</a></li>
-		</ul>
-	</header>
-	<br><br><br>
-	<section id="content">
-		<div id="Bubble_Sort">
-		<a href="Sort_bubble.html"><h3>Bubble Sort</h3></a>
-		<p>Algoritma Bubble Sort merupakan algoritma pengurutan sederhana <br>
+			<li><a href="Rank.html">Rank</a></li>
+		  </ul> 
+        </div>
+      </div>
+    </div>
+	
+	<div class="container">
+		<div class="jumbotron">
+		<div class="row">
+			<div class="col-md-11">
+          		<h3>Bubble Sort</h3>
+				<p>Algoritma Bubble Sort merupakan algoritma pengurutan sederhana <br>
 yang bekerja dengan cara membandingkan setiap elemen dari Array ..</p>
-		<a href="Sort_bubble.html"><p class="readmore">Read more</p></a>
+          		<p><a class="btn btn-default" href="Sort_bubble.html" role="button">Readmore &raquo;</a></p>
+        	</div>
 		</div>
-		
-		<div id="Insertion_Sort">
-		<a href="#"><h3>Insertion Sort</h3></a>
-		<p>Algoritma Insertion Sort merupakan algoritma yang efisien untuk <br>
-mengurutkan bilangan dalam jumlah yang kecil. Analogi ini termasuk ..</p>
-		<a href="Sort_insertion.html"><p class="readmore">Read more</p></a>
 		</div>
-		
-		<div id="Quick_Sort">
-		<a href="Sort_quick.html"><h3>Quick Sort</h3></a>
-		<p>Quicksort merupakan Algoritma Sorting yang dikembangkan oleh Tony <br>
+	</div>
+	
+	<div class="container">
+		<div class="jumbotron">
+		<div class="row">
+        	<div class="col-md-11">
+          	 	<h3>Insertion Sort</h3>
+			  	<p>Algoritma Insertion Sort merupakan algoritma yang efisien untuk <br>
+mengurutkan bilangan dalam jumlah yang kecil. Analogi ini ..</p>
+			  	<p><a class="btn btn-default" href="Sort_insertion.html" role="button">Readmore &raquo;</a></p>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="jumbotron">
+		<div class="row">
+			<div class="col-md-11">
+			  	<h3>Quick Sort</h3>
+			  	<p>Quicksort merupakan Algoritma Sorting yang dikembangkan oleh Tony <br>
 Hoare yang, secara kasus rata-rata, membuat pengurutan O(n log n)..</p>
-		<a href="Sort_quick.html"><p class="readmore">Read more</p></a>
+			  	<p><a class="btn btn-default" href="Sort_quick.html" role="button">Readmore &raquo;</a></p>
+			</div>
 		</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="jumbotron">
+		<div class="row">
+			<div class="col-md-11">
+			  	<h3>Merge Sort</h3>
+			  	<p>QMerge sort merupakan algoritma pengurutan dalam ilmu komputer yang dirancang untuk memenuhi kebutuhan pengurutan atas suatu rangkaian data yang tidak memungkinkan untuk ditampung dalam memori komputer karena jumlahnya yang terlalu besar.  alogaritma ini bekerja dengan tingkat keefektifan O(nlog(n))...</p>
+			  	<p><a class="btn btn-default" href="Sort_merge.html" role="button">Readmore&raquo;</a></p>
+			</div>
+		</div>
+		</div>
+	</div>	
+			
+		</div>
+	</div>	
 		
-		<div id="Merge_Sort">
-		<a href="#"><h3>Merge Sort</h3></a>
-		<p>QMerge sort merupakan algoritma pengurutan dalam ilmu komputer yang dirancang untuk memenuhi kebutuhan pengurutan atas suatu rangkaian data yang tidak memungkinkan untuk ditampung dalam memori komputer karena jumlahnya yang terlalu besar.  alogaritma ini bekerja dengan tingkat keefektifan O(nlog(n))...</p>
-		<a href="Sort_merge.html"><p class="readmore">Read more</p></a>
-		</div>
-	</section>
-	<hr class="hr3">
-	<div id="tengah"> 
-		 <p>
-			copyright &copy; 2013 AERO 7
-		 </p>
-	 </div>	
-
-	</body>
+	
+	<footer>
+		<p>Copyright &copy; AERO7 STMIK MIKROSKIL 2013</p>
+	</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
