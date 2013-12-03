@@ -32,10 +32,9 @@
       <div class="container">
 		<div class="nav navbar-nav navbar-right">
           <ul class="nav nav-pills">
-            <li><a href="Sort_bubble.html">Bubble Sort</a></li>
-            <li class="active"><a href="Pseudocode.html">Pseudocode</a></li>
-            <li><a href="Contoh.html">Contoh</a></li>
-            
+           <li><a href="Sort_insertion.html">Insertion Sort</a></li>
+            <li><a href="I_Pseudocode.html">Pseudocode</a></li>
+            <li class="active"><a href="I_Contoh.html">Contoh</a></li>
 		  </ul> 
         </div>
       </div>
@@ -43,33 +42,25 @@
 	
 	<header>
 	<div id="judulsort">
-			<h1>Bubble Sort</h1>
+			<h1>Insertion Sort</h1>
 		</div>
 	</header>
 	<section id="contentsort">
-	<div id="pseudocode">
-		<h2>Pseudocode</h2>
-			<pre><code>
-			procedure bubbleSort( A : list of sortable items ) defined as:
-			 do
-			   swapped := false
-			   for each i in 0 to length(A) - 2 inclusive do:
-				 if A[ i ] > A[ i + 1 ] then
-				   swap( A[ i ], A[ i + 1 ] )
-				   swapped := true
-				 end if
-			   end for
-			 while swapped
-			end procedure
-			</code></pre>
+	<pre><code>
+	<h2> Contoh</h2>
+		Simulasi dari algoritma Insertion Sort untuk array A yang
+	berisikan {7,3,4,2,1} adalah sebagai berikut.
+	Loop 1 , Key = 3 > [7, 3, 4, 2, 1] => [3, 7, 4, 2, 1]
+	Loop 2 , Key = 4 > [3, 7, 4, 2, 1] => [3, 4, 7, 2, 1]
+	Loop 3 , Key = 2 > [3, 4, 7, 2, 1] => [2, 3, 4, 7, 1]
+	Loop 4 , Key = 1 > [2, 3, 4, 7, 1] => [1, 2, 3, 4, 7]
+	</code></pre>
 		</div>
-		
-	</section>
-	<div id="example">
-			<h2>contoh Bubble sort</h2>
-			<img src="images/Bubble-sort-example.gif" alt="example">
+			</section>
+		<div id="example">
+		<h2>contoh Insertion sort</h2>
+			<img src="images/Insertion-sort-example.gif" alt="example">
 		</div>
-		
 		</div>
 	</body>
 </html>

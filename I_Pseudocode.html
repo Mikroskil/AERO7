@@ -28,46 +28,46 @@
         </div>
       </div>
 	  
-
-	 <div class="navbar navbar-default navbar-default-top" role="navigation">
+	  <div class="navbar navbar-default navbar-default-top" role="navigation">
       <div class="container">
 		<div class="nav navbar-nav navbar-right">
           <ul class="nav nav-pills">
-            <li class="active"><a href="Sort_insertion.html">Insertion Sort</a></li>
-            <li><a href="I_Pseudocode.html">Pseudocode</a></li>
+           <li><a href="Sort_insertion.html">Insertion Sort</a></li>
+            <li class="active"><a href="I_Pseudocode.html">Pseudocode</a></li>
             <li><a href="I_Contoh.html">Contoh</a></li>
-            
 		  </ul> 
         </div>
       </div>
     </div>
-	<body>
-	<div id="container">
+	
 	<header>
-		<div id="back">
-			<a href="Learn.html"><button>Back</button></a>
-		</div>
-		<div id="judulsort">
+	<div id="judulsort">
 			<h1>Insertion Sort</h1>
 		</div>
 	</header>
 	<section id="contentsort">
-		<div id="pengertian">
-			<p>Algoritma Insertion Sort merupakan algoritma yang efesien untuk mengurutkan bilangan dalam jumlah yang kecil. Analogi Insertion Sort mirip dengan cara seseorang mensortir kartu di tangannya dimana bisa dilihat pada gambar di bawah ini.
-			</p>
-			<img src="Images/kartu.jpg" alt="example">
+	<div id="pseudocode">
+		<h2>Pseudocode</h2>
+			<pre><code>
+			Algoritma INSERTION-SORT(A)
+			1: for j = 2 to A:length do
+			2: 	 key = A[j]
+			3: 	 i = j - 1
+			4:	 while i > 0 and A[i] > key do
+			5: 		A[i + 1] = A[i]
+			6:		i = i - 1
+			7: 	 end while
+			8:   A[i + 1] = key
+			9: end for
+			</code></pre>
 		</div>
-		<div id="example">
+		
+	</section>
+	<div id="example">
 			<h2>contoh Insertion sort</h2>
 			<img src="images/Insertion-sort-example.gif" alt="example">
 		</div>
-	</section>
-	<footer>
-		<div id="backtotop">
-			<a href="Sort_insertion.html"><button>To Top</button></a>
-		</div>
-	</footer>
 		
-	</div>
+		</div>
 	</body>
 </html>
