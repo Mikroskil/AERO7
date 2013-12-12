@@ -1,12 +1,19 @@
 body{
 	background: #FFCC33;
 }
+h3{text-decoration:underline;
+	color:#FFCC33;
+	font-weight:bold;}
+
 #navigasi{
 	padding-top: 15px;
 }
 .jumbotron{
 	background: #FF9900;
 }
+.row{margin:auto;
+	 margin-left:-55px;}
+
 #spasi{
 	height: 100px;
 }
