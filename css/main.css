@@ -8,6 +8,7 @@ h3{text-decoration:underline;
 #navigasi{
 	padding-top: 15px;
 }
+.navbar-brand{font-size:28px;}
 .jumbotron{
 	background: #FF9900;
 }
