@@ -12,26 +12,19 @@ body{
 }
 
 /*hover*/
+#hover-gambar h5{
+	font-weight: bold;
+	text-align: center;
+	color: #003366;
+}
 #hover-gambar:hover{
 	padding: 3px;
 }
 
 /*footer*/
-.footer{
-	font-size:12px;
-	color:green;
-	margin-top:650px;
-	}
-#foot a{
-	color:orange;
-	font-weight:bold;
-}
-
-#foot a:hover{
-	color:#33FFFF;
-	font-weight:bold;
-}
-
-#tengah{text-align: center;
-		color:#0000FF;}
+#tengah{
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+		}
 .hr3{width:100%; align:center;}
