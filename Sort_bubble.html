@@ -2,64 +2,168 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
 
-		<title> Algoritma dan Komputer </title>
-		<link href="bootstrap-3.0.2/dist/css/bootstrap.css" rel="stylesheet">
+    <title>Stylish Portfolio Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.0.2/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/B_Sort.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
   </head>
-  	<link rel="stylesheet" href="css/main.css">
 
   <body>
-
-    <div class="navbar navbar-default navbar-default-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img src="images/tutwuri.jpg" alt=""> SMA Negeri 1 Ujung Padang</a></img>
-        </div>
-		<div class="nav navbar-nav navbar-right">
-          <ul class="nav nav-pills">
-            <li><a href="sign_up.html"><button type="submit" class="btn btn-success">Sign Up</button></a></li>
-            <li><a href="login.html"><button type="submit" class="btn btn-primary">Login</button></a></li>
-		  </ul> 
-        </div>
+	
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle">+<i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle">-<i class="fa fa-times"></i></a>
+        <li class="sidebar-brand"><a href="Learn.html">Back To Home</a></li>
+		<li class="sidebar-brand"><a href="#">Bubble Sort</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">Pengertian</a></li>
+        <li><a href="#services">Pseudocode</a></li>
+		<li><a href="#portfolio">Contoh</a></li>
+      </ul>
+    </div>
+    <!-- /Side Menu -->
+  
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+      <div class="vert-text">
+        <h1>Bubble Sort</h1>
+        <a href="#about" class="btn btn-default btn-lg">LETS LEARN!</a>
       </div>
-	  
-	  <div class="navbar navbar-default navbar-default-top" role="navigation">
+    </div>
+    <!-- /Full Page Image Header Area -->
+  
+    <!-- Intro -->
+    <div id="about" class="intro">
       <div class="container">
-		<div class="nav navbar-nav navbar-right">
-          <ul class="nav nav-pills">
-            <li class="active"><a href="Sort_bubble.html">Bubble Sort</a></li>
-            <li><a href="B_Pseudocode.html">Pseudocode</a></li>
-            <li><a href="B_Contoh.html">Contoh</a></li>
-            
-		  </ul> 
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>Pengertian</h2>
+			
+            <p class="lead">Algoritma Bubble Sort merupakan algoritma pengurutan sederhana yang bekerja dengan cara membandingkan setiap elemen dari Array dan menukarkan elemen-elemen tersebut.</p>
+          </div>
         </div>
       </div>
     </div>
-	<body>
-	<div id="container">
-	<header>
-		<div id="back">
-			<a href="Learn.html"><button>Back</button></a>
-		</div>
-		<div id="judulsort">
-			<h1>Bubble Sort</h1>
-		</div>
-	</header>
-	<section id="contentsort">
-		<div id="pengertian">
-			<p>Algoritma Bubble Sort merupakan algoritma pengurutan sederhana yang bekerja dengan cara membandingkan setiap elemen dari Array dan menukarkan elemen-elemen tersebut. Algoritma Bubble Sort bisa dilihat di Algoritma 1. Simulasi dari Algoritma 1 adalah sebagai berikut.
-			</p>
-	</section>
-		<div id="example">
-			<h2>contoh Bubble sort</h2>
-			<img src="images/Bubble-sort-example.gif" alt="example">
-		</div>
-		
-	</div>
-	</body>
+    <!-- /Intro -->
+  
+    <!-- Services -->
+    <div id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>Pseudocode</h2>
+            <hr>
+			<p>procedure bubbleSort ( A : list of sortable items ) defined as:</p>
+			 <div class="text-left">
+			 <pre>
+			 do
+			 swapped := false
+			   for each i in 0 to length(A) - 2 inclusive do:
+				 if A[ i ] > A[ i + 1 ] then
+				   swap( A[ i ], A[ i + 1 ] )
+				   swapped := true
+				 end if
+			   end for
+			 while swapped
+			end procedure
+			</pre>
+			</div>
+			
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <!-- /Services -->
+
+    <!-- Callout -->
+    <div class="callout">
+      <div class="vert-text">
+        <h1></h1>
+      </div>
+    </div>
+    <!-- /Callout -->
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>Contoh</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="portfolio-item">
+              <img class="img-responsive" src="images/Bubble-sort-example.gif" alt="example">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Portfolio -->
+
+    <!-- Call to Action -->
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h6>Copyright &copy; 2013 AERO 7</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Call to Action -->
+
+
+    <!-- JavaScript -->
+    <script src="bootstrap-3.0.2/dist/js/jquery-1.10.2.js"></script>
+    <script src="bootstrap-3.0.2/dist/js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
+  </body>
+
 </html>
