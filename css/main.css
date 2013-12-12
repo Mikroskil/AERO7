@@ -1,5 +1,22 @@
+body{
+	background: #FFCC33;
+}
+#navigasi{
+	padding-top: 15px;
+}
+.jumbotron{
+	background: #FF9900;
+}
+#spasi{
+	height: 100px;
+}
 
-//footer
+/*hover*/
+#hover-gambar:hover{
+	padding: 3px;
+}
+
+/*footer*/
 .footer{
 	font-size:12px;
 	color:green;
