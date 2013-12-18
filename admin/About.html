@@ -1,0 +1,95 @@
+<?php
+session_start();
+$username		=$_SESSION['username'];
+$password			=$_SESSION['password'];
+
+if(!isset($_SESSION['username'])) {
+header("location:../Main.html");
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+	<link href="../bootstrap-3.0.2/dist/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/main.css">
+                
+				<style>
+					
+					#isi{
+						background:#FF9900;
+						border:solid #FF9900;
+						border-radius:10px;
+						font-family: verdana;
+						width: 800px;
+						height:170px;
+						margin: 0 auto;
+						margin-bottom:300px;
+						}
+					
+					h1{
+						padding-left:30px;
+						font-weight:bold;
+						text-decoration:underline;
+						font-size: 30px;
+						color:#FFCC00;
+						margin:5px 0 0 10px;
+						}			
+					
+					p{color:#FFFFFF;
+					font-family:"Courier New", Courier, monospace;
+					padding-left:30px;
+					font-size: 18px;
+					font-weight:700;
+					}
+					
+					</style>
+         <title>Algoritma dan komputer</title>
+  </head>
+<body>
+
+	<div id="navigasi" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+	  	<div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="../images/tutwuri.jpg" alt="" height="40"> SMA Negeri 1 Ujung Padang</a></img>
+        </div>
+		<div class="nav navbar-nav navbar-right">
+          <ul class="nav nav-pills">
+            <li><a href="Main.html">Home</a></li>
+            <li class="active"><a href="About.html">About</a></li>
+            <li><a href="Learn.html">Learn</a></li>
+            <li><a href="Test.html">Test</a></li>
+			<li><a href="Contact.html">Contact Us</a></li>
+			<li><a href="Rank.html">Rank</a></li>
+            <li><a href="logout.php">Logout</a></li>
+		  </ul> 
+        </div>
+      </div>
+      </div>
+	
+	<div id="spasi">
+	</div>
+
+
+<div id="isi">
+<header>
+	<h1>Algoritma dan Komputer</h1>
+</header>
+<p>
+SMA NEGERI 1 UJUNG PADANG adalah sebuah SMA yang berada di Kabupaten Simalungun,tepatnya di Kecamatan Ujung Padang.Website ini di buat untuk membantu para siswa dan siswi di SMA NEGERI 1 UJUNG PADANG untuk lebih mengetahui tentang Algoritma dan Komputer.</p>
+</div>
+<hr class="hr3">
+	<div id="tengah"> 
+		 <p>
+			Copyright &copy; 2013 AERO 7
+		 </p>
+	 </div>	
+</body>
+</html>
