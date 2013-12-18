@@ -1,4 +1,5 @@
 <?php
+session_start;
 include "koneksi.php";
 
 $nama=$_POST['User'];
@@ -7,7 +8,13 @@ $sa=mysql_query("select * from sign_up where username='$nama' and password='$pas
 $c=mysql_fetch_array($sa);
 
 if(($nama = $c[username]) and ($password = $c[password])){
-	echo"<script>alert('berhasil',document.location.href='Main.html')</script>";
+	$username = $c[username];
+	$password = $c[password];
+	
+	$_SESSION['username']=$nama;
+	$_SESSION['password']=$password;
+	
+	echo"<script>alert('berhasil',document.location.href='admin/Main.html')</script>";
 
 
 }
