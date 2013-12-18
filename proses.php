@@ -1,4 +1,4 @@
-<?
+<?php
 include "koneksi.php";
 
 $nama=$_POST['User'];
