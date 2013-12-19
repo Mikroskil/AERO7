@@ -14,7 +14,7 @@ else {
 	
 $sa=mysql_query("insert into sign_up values ('$_POST[User]','$_POST[password]','$_POST[email]')");
 
-echo "<script>alert('berhasil disimpan',document.location.href='Main.html')</script>
+echo "<script>alert('berhasil disimpan',document.location.href='Admin/Main.html')</script>
 ";
 }
 ?>
