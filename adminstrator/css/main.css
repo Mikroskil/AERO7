@@ -1,0 +1,38 @@
+body{
+	background: #FFCC33;
+}
+h3{text-decoration:underline;
+	color:#FFCC33;
+	font-weight:bold;}
+
+#navigasi{
+	padding-top: 15px;
+}
+.navbar-brand{font-size:28px;}
+.jumbotron{
+	background: #FF9900;
+}
+.row{margin:auto;
+	 margin-left:-55px;}
+
+#spasi{
+	height: 100px;
+}
+
+/*hover*/
+#hover-gambar h5{
+	font-weight: bold;
+	text-align: center;
+	color: #003366;
+}
+#hover-gambar:hover{
+	padding: 3px;
+}
+
+/*footer*/
+#tengah{
+	font-weight: bold;
+	text-align: center;
+	color: #FFFFFF;
+		}
+.hr3{width:100%; align:center;}
