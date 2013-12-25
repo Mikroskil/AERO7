@@ -1,13 +1,3 @@
-<?php
-session_start();
-$username		=$_SESSION['username'];
-$password			=$_SESSION['password'];
-
-if(!isset($_SESSION['username'])) {
-header("location:../Main.html");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,9 +28,9 @@ header("location:../Main.html");
             <li class="active"><a href="Main.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Learn.html">Learn</a></li>
-            <li><a href="Test.html">Test</a></li>
+            <li><a href="Test.php">Test</a></li>
 			<li><a href="Contact.html">Contact Us</a></li>
-			<li><a href="Rank.html">Rank</a></li>
+			<li><a href="Rank.php">Rank</a></li>
 			<li><a href="logout.php">Logout</a></li>
 		  </ul> 
         </div>

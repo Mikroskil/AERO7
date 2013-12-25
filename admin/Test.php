@@ -1,12 +1,4 @@
-<?php
-session_start();
-$username		=$_SESSION['username'];
-$password			=$_SESSION['password'];
 
-if(!isset($_SESSION['username'])) {
-header("location:../Main.html");
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -96,16 +88,18 @@ header("location:../Main.html");
   <?php
   include "koneksi.php";
   $a=5;
-  $a++;
+ 
+  
   $a=mysql_query("select * from test");
-  while ($baris=mysqk_fech_array($a)){
+  while ($baris=mysql_fetch_array($a)){
+	 
   ?>
         <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading"><?php echo "$a";?> 
-        <span class="glyphicon glyphicon-fire"></span>
+        <h4 class="list-group-item-heading">5.Sulit
+        
         </h4>
-        <p class="list-group-item-text"></p>
-        <p class="list-group-item-text"></p>
+        <p class="list-group-item-text"><?php echo"$baris[isi]"; ?></p>
+        
         </a>
         <? } ?>
 	</div>

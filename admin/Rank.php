@@ -1,12 +1,4 @@
-<?php
-session_start();
-$username		=$_SESSION['username'];
-$password			=$_SESSION['password'];
 
-if(!isset($_SESSION['username'])) {
-header("location:../Main.html");
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,12 +26,12 @@ header("location:../Main.html");
 		<div class="nav navbar-nav navbar-right">
           <ul class="nav nav-pills">
             <li><a href="Main.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
+            <li class="active"><a href="About.html">About</a></li>
             <li><a href="Learn.html">Learn</a></li>
             <li><a href="Test.html">Test</a></li>
 			<li><a href="Contact.html">Contact Us</a></li>
-			<li  class="active"><a href="Rank.html">Rank</a></li>
-			<li><a href="logout.php">Logout</a></li>
+			<li><a href="Rank.html">Rank</a></li>
+			<li><a href="login.html">Login</a></li>
 		  </ul> 
         </div>
       </div>
@@ -51,6 +43,7 @@ header("location:../Main.html");
 	<div class="container">
 		
 		<div class="row">
+        <a href="">+add</a><br>
 			<table class="table table-hover">
 			<tr class="warning">
 				<td>#</td>
@@ -59,23 +52,22 @@ header("location:../Main.html");
 				<td>Jenis Kelamin</td>
 				<td>Points</td>
 			</tr>
-			
-			<?php
-			include "koneksi.php";
-			$a=mysql_query("select * from customer");
-			while ($baris=mysql_fetch_array($a)){
-			?>
+            
+            <?
+            include "koneksi.php";
+            $a=mysql_query("select * from customer");
+            while ($baris=mysql_fetch_array($a)){
+            
+            ?>
+            
 			<tr class="danger">
-				<td><?php echo"akjhkh"?></td>
-				<td><?php echo $baris[no_induk] ?></td>
-				<td><a href="#"><?=$baris[nama]?></a></td>
-				<td><a href="#"><?php echo"$baris[jk]";?></a></td>
-				<td><?php echo"$baris[points]";?></td>
-				
+				<td>....</td>
+				<td><? echo $baris[no_induk] ?></td>
+				<td><a href="#"><? echo $baris[nama] ?></a></td>
+				<td><? echo $baris[jk] ?></td>
+				<td><? echo $baris[points] ?></td>
 			</tr>
-			<?php } ?>
-			
-			
+			<? } ?>
 			</table>
 		</div>
 		
