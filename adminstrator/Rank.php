@@ -53,7 +53,7 @@
 				<td>Points</td>
 			</tr>
             
-            <?
+            <?php
             include "koneksi.php";
             $a=mysql_query("select * from customer");
             while ($baris=mysql_fetch_array($a)){
@@ -62,12 +62,12 @@
             
 			<tr class="danger">
 				<td>....</td>
-				<td><? echo $baris[no_induk] ?></td>
-				<td><a href="#"><? echo $baris[nama] ?></a></td>
-				<td><? echo $baris[jk] ?></td>
-				<td><? echo $baris[points] ?></td>
+				<td><?php echo $baris[no_induk] ?></td>
+				<td><a href="#"><?php echo $baris[nama] ?></a></td>
+				<td><?php echo $baris[jk] ?></td>
+				<td><?php echo $baris[points] ?></td>
 			</tr>
-			<? } ?>
+			<?php } ?>
 			</table>
 		</div>
 		

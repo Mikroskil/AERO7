@@ -26,8 +26,8 @@
 		<div class="nav navbar-nav navbar-right">
           <ul class="nav nav-pills">
             
-            
-            <li><a href="Test.php">Test</a></li>
+            <li><a href="Learn.php">Learn</a></li>
+            <li class="active"><a href="Test.php">Test</a></li>
 			<li><a href="index1.php">Rank</a></li>
 			<li><a href="logout.php">Logout</a></li>
 		  </ul> 
@@ -47,7 +47,7 @@
 			<tr>
 				
 				
-			<tr>	<td>Isi :</td><td><textarea name="nama" cols="2" rows="2"></textarea></td></tr>
+			<tr>	<td><h4>Isi :</h4></td><td><textarea name="nama" cols="40" rows="2"></textarea></td></tr>
 			
             <tr><td colspan="2"><input type="submit" value="simpan"></td>
 			</tr>
@@ -58,12 +58,7 @@
 		
 	</div>
 		
-	<hr class="hr3">
-	<div id="tengah"> 
-		 <p>
-			Copyright &copy; 2013 AERO 7
-		 </p>
-	 </div>
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     

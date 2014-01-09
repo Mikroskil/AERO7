@@ -24,7 +24,13 @@
       <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle">-<i class="fa fa-times"></i></a>
         <li class="sidebar-brand"><a href="Learn.php">Back To Learn</a></li>
-		<li class="sidebar-brand"><a href="#">Bubble Sort</a></li>
+		<li class="sidebar-brand"><?php
+			$no_urut=$_GET['no_urut'];
+            include "koneksi.php";
+            $a=mysql_query("select * from learn where no_urut='$_GET[no_urut]'");
+            $baris=mysql_fetch_array($a);
+            
+            ?><a href="#"><?php echo "$baris[judul]" ?></a></li>
         <li><a href="#top">Home</a></li>
         <li><a href="#about">Pengertian</a></li>
         <li><a href="#services">Pseudocode</a></li>
@@ -36,7 +42,14 @@
     <!-- Full Page Image Header Area -->
     <div id="top" class="header">
       <div class="vert-text">
-        <h1>Bubble Sort</h1>
+      <?php
+			$no_urut=$_GET['no_urut'];
+            include "koneksi.php";
+            $a=mysql_query("select * from learn where no_urut='$_GET[no_urut]'");
+            $baris=mysql_fetch_array($a);
+            
+            ?>
+        <h1><?php echo "$baris[judul]" ?> </h1>
         <a href="#about" class="btn btn-default btn-lg">LETS LEARN!</a>      </div>
     </div>
     <!-- /Full Page Image Header Area -->
@@ -47,8 +60,14 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
             <h2>Pengertian</h2>
-			
-            <p class="lead">Algoritma Bubble Sort merupakan algoritma pengurutan sederhana yang bekerja dengan cara membandingkan setiap elemen dari Array dan menukarkan elemen-elemen tersebut.</p>
+			<?php
+			$no_urut=$_GET['no_urut'];
+            include "koneksi.php";
+            $a=mysql_query("select * from learn where no_urut='$_GET[no_urut]'");
+            $baris=mysql_fetch_array($a);
+            
+            ?>
+            <p class="lead"><?php echo"$baris[sub_judul]" ?></p>
           </div>
         </div>
       </div>
@@ -56,25 +75,24 @@
     <!-- /Intro -->
   
     <!-- Services -->
+    
+    <?php
+			$no_urut=$_GET['no_urut'];
+            include "koneksi.php";
+            $a=mysql_query("select * from learn where no_urut='$_GET[no_urut]'");
+            $baris=mysql_fetch_array($a);
+            
+            ?>
     <div id="services" class="services">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
             <h2>Pseudocode</h2>
             <hr>
-			<p>procedure bubbleSort ( A : list of sortable items ) defined as:</p>
+			<p><?php echo "$baris[judul_isi]" ?></p>
 			 <div class="text-left">
 			 <pre>
-			 do
-			 swapped := false
-			   for each i in 0 to length(A) - 2 inclusive do:
-				 if A[ i ] > A[ i + 1 ] then
-				   swap( A[ i ], A[ i + 1 ] )
-				   swapped := true
-				 end if
-			   end for
-			 while swapped
-			end procedure
+			 <?php echo"$baris[isi]" ?> 
 			</pre>
 			</div>
           </div>
@@ -105,7 +123,8 @@
         <div class="row">
           <div class="col-md-4 col-md-offset-4 text-center">
             <div class="portfolio-item">
-              <img class="img-responsive" src="images/Bubble-sort-example.gif" alt="example">            </div>
+			<?php
+              echo"<img src=\"../adminstrator/file/$baris[file]\"width=\"120\" height=\"100\">";?></div>
           </div>
         </div>
       </div>

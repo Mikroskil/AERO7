@@ -25,12 +25,10 @@
         </div>
 		<div class="nav navbar-nav navbar-right">
           <ul class="nav nav-pills">
-            <li><a href="Main.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Learn.php">Learn</a></li>
+            
+            <li class="active"><a href="Learn.php">Learn</a></li>
             <li><a href="Test.php">Test</a></li>
-			<li><a href="Contact.html">Contact Us</a></li>
-			<li class="active"><a href="Rank.php">Rank</a></li>
+			<li><a href="index1.php">Rank</a></li>
 			<li><a href="logout.php">Logout</a></li>
 		  </ul> 
         </div>
@@ -43,42 +41,33 @@
 	<div class="container">
 		
 		<div class="row">
-       
-			<table class="table table-hover">
-			<tr class="warning">
-				<td>No Urut</td>
-				<td>Nomor Induk</td>
-				<td>Nama</td>
-				<td>Jenis Kelamin</td>
-				<td>Points</td>
-			</tr>
+        <form action="proses_simpan_learn.php" method="POST" enctype="multipart/form-data">
+        
+			<table width="68%" class="table table-hover">
+			<tr>
+				
+				
+			<tr>	<td><h4>Judul</h4></td><td><h4><strong>:</strong></h4></td><td><textarea name="judul" cols="10" rows="1"></textarea></td></tr>
             
-            <?php			$ta=0;
-            include "koneksi.php";
-            $a=mysql_query("select * from customer");
-            while ($baris=mysql_fetch_array($a)){
-            $ta++
-            ?>
-            
-			<tr class="danger">
-				<td><?php echo "$ta" ;?></td>
-				<td><?php echo "$baris[no_induk]" ?></td>
-				<td><a href="#"><?php echo "$baris[nama]" ?></a></td>
-				<td><?php echo "$baris[jk]" ?></td>
-				<td><?php echo "$baris[points]" ?></td>
+            <tr>	<td><h4>Sub Judul</h4></td><td><h4><strong>:</strong></h4></td><td><textarea name="sub_judul" cols="40" rows="2"></textarea></td></tr>
+			
+<tr>	<td><h4>Judul Isi</h4></td><td><h4><strong>:</strong></h4></td><td><textarea name="judul_isi" cols="35" rows="1"></textarea></td></tr>
+
+<tr>	<td><h4>Isi</h4></td><td><h4><strong>:</strong></h4></td><td><textarea name="isi" cols="60" rows="2"></textarea></td></tr>
+
+<tr>	<td><h4>Contoh</h4></td><td><h4><strong>:</strong></h4></td><td><input name="foto" type="file"></td></tr>
+
+            <tr><td colspan="2"><input type="submit" value="simpan"></td>
 			</tr>
-			<?php } ?>
-			</table>
+
+            
+           
+			</table></form>
 		</div>
 		
 	</div>
 		
-	<hr class="hr3">
-	<div id="tengah"> 
-		 <p>
-			Copyright &copy; 2013 AERO 7
-		 </p>
-	 </div>
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     

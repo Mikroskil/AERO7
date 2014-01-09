@@ -27,7 +27,7 @@
           <ul class="nav nav-pills">
             <li><a href="Main.html">Home</a></li>
             <li><a href="About.html">About</a></li>
-            <li><a href="Learn.html">Learn</a></li>
+            <li><a href="Learn.php">Learn</a></li>
             <li class="active"><a href="Test.html">Test</a></li>
 			<li><a href="Contact.html">Contact Us</a></li>
 			<li><a href="Rank.php">Rank</a></li>
@@ -87,21 +87,26 @@
     
   <?php
   include "koneksi.php";
-  $a=5;
- 
   
+$b=4;
+ 
   $a=mysql_query("select * from test");
+  
   while ($baris=mysql_fetch_array($a)){
-	 
-  ?>
+	 $b++;
+  
+ 
+?> 
+ 
         <a href="#" class="list-group-item">
-        <h4 class="list-group-item-heading">5.Sulit
+        <h4 class="list-group-item-heading"><?php echo "$b"; ?>. Sulit   <span class="glyphicon glyphicon-fire"></span>
         
         </h4>
         <p class="list-group-item-text"><?php echo"$baris[isi]"; ?></p>
         
         </a>
-        <? } ?>
+        <?php
+ } ?>
 	</div>
     </div>
     

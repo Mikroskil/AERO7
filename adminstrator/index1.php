@@ -26,9 +26,9 @@
 		<div class="nav navbar-nav navbar-right">
           <ul class="nav nav-pills">
             
-            
+            <li><a href="Learn.php">Learn</a></li>
             <li><a href="Test.php">Test</a></li>
-			<li><a href="index1.php">Rank</a></li>
+			<li class="active"><a href="index1.php">Rank</a></li>
 			<li><a href="logout.php">Logout</a></li>
 		  </ul> 
         </div>
@@ -48,7 +48,7 @@
 				
 				<td>Nomor Induk :</td><td><input type="text" name="no_induk" ></td></tr>
 			<tr>	<td>Nama :</td><td><input type="text" name="nama" ></td></tr>
-			<tr>	<td>Jenis Kelamin:</td><td><input type="text" name="jk" ></td></tr>
+			<tr>	<td>Jenis Kelamin:</td><td><input type="radio" value="pria" name="jk">pria<input type="radio" value="wanita" name="jk">wanita</td></tr>
 				<tr><td>Points</td><td><input type="text" name="points" ></td>
 			</tr>
             <tr><td colspan="2"><input type="submit" value="simpan"></td>
@@ -60,12 +60,7 @@
 		
 	</div>
 		
-	<hr class="hr3">
-	<div id="tengah"> 
-		 <p>
-			Copyright &copy; 2013 AERO 7
-		 </p>
-	 </div>
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     
