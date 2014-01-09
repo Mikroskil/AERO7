@@ -113,13 +113,13 @@
 			</div>
 			<div id="hover-gambar" class="col-md-2">
 			  	<h5>Basic Computer</h5>
-			  	<a class="btn btn-default" href="B_flowchart.html" role="button">
+			  	<a class="btn btn-default" href="#" role="button">
 				<img src="images/lampu.jpg" alt="..." class="img-thumbnail">
 				</a>
 			</div>
 			<div id="hover-gambar" class="col-md-2">
 			  	<h5>Rank</h5>
-			  	<a class="btn btn-default" href="Rank.php" role="button">
+			  	<a class="btn btn-default" href="Rank.html" role="button">
 				<img src="images/bintang1.jpg" alt="..." class="img-thumbnail">
 			  	</a>
 		</div>
